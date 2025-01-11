@@ -1,0 +1,8 @@
+0. Start
+1. An input webpage is provided
+2. Scrape all the links present on the webpage
+3. Now loop over all the links present which have a parent root domain the same as the input root domain and scrape all the links present in those webpages
+4. Follow the same recursive process until you reach to the leaf node, that is : all the links open up to some other domain or no link is present on that webpage
+5. Now finally, we need to create this entire hierarchical structure onto a graph with all the webpages serving as nodes with the root node being the input url's webpage. (We can have 3 properties of each node : name, url, current_date) and a relationship between the nodes as HAS_CHILD.
+6. Build the Neo4J Graph DB.
+7. Stop
